@@ -1,134 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://use.fontawesome.com/00f52ae017.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:600&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://use.fontawesome.com/00f52ae017.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:600&display=swap"
+            rel="stylesheet">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Test task</title>
+    </head>
 
-    <title>Test task</title>
-</head>
+    <body>
+        <div class="product-page">
+            <div class="product-page__image">
+                <img src="images/product.png" alt="product_image"
+                    id="img-product">
+            </div>
+            <div class="product-page__details">
+                <div class="product">
+                    <h2 class="product__header">FOR GAMERS BY GAMERS TEE
+                    </h2>
+                    <p class="product__id">Item #: 701642853695</p>
+                    <div class="product__price">
+                        <span class="product__price__old">$29.50 </span>
+                        <span class="product__price__new"> $19.99</span>
+                    </div>
+                    <div class="product__rating">
+                        <ul id='product__rating__stars'>
+                            <li class='star' title='1' data-value='1'>
+                                <i class='fa fa-star'></i>
+                            </li>
+                            <li class='star' title='2' data-value='2'>
+                                <i class='fa fa-star'></i>
+                            </li>
+                            <li class='star' title='3' data-value='3'>
+                                <i class='fa fa-star'></i>
+                            </li>
+                            <li class='star' title='4' data-value='4'>
+                                <i class='fa fa-star'></i>
+                            </li>
+                            <li class='star' title='5' data-value='5'>
+                                <i class='fa fa-star'></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__share"> Share it!</div>
+                    <div class="socials">
+                        <ul class="socials__list">
+                            <li><a href="http://facebook.com"><i class="fa
+                                        fa-facebook socials__list__icon"></i></a>
+                            </li>
+                            <li><a href="http://twitter.com"><i class="fa
+                                        fa-twitter socials__list__icon"></i></a>
+                            </li>
+                            <li><a href="http://pinterest.com"><i class="fa
+                                        fa-pinterest-p socials__list__icon"></i></a>
+                            </li>
+                            <li><a href="http://youtube.com"><i class="fa
+                                        fa-youtube socials__list__icon"
+                                        aria-hidden="true"></i></a> </li>
+                            <li class="close-modal"></li>
+                        </ul>
+                    </div>
+                    <div class="product__description">Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur.
+                    </div>
 
-<body>
-    <div class="product-page">
-        <div class="product-page__image">
-            <img src="images/product.png" alt="product_image" id="img-product">
-        </div>
-        <div class="product-page__details">
-            <div class="product">
-                <h2 class="product__header">FOR GAMERS BY GAMERS TEE
-                </h2>
-                <p class="product__id">Item #: 701642853695</p>
-                <div class="product__price">
-                    <span class="product__price__old">$29.50 </span>
-                    <span class="product__price__new"> $19.99</span>
+                    <div class="product-size">
+                        <span>SIZE:</span>
+                        <ul>
+                            <li class="product-size__variant">XS</li>
+                            <li class="product-size__variant">S</li>
+                            <li class="product-size__variant">M</li>
+                        </ul>
+                    </div>
+                    <div class="product-color">
+                        <span>COLOR:</span>
+                        <ul>
+                            <li class="product-color__variant"></li>
+                            <li class="product-color__variant"></li>
+                            <li class="product-color__variant"></li>
+                            <li class="product-color__variant"></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="product__rating">
-                    <ul id='product__rating__stars'>
-                        <li class='star' title='1' data-value='1'>
-                            <i class='fa fa-star'></i>
-                        </li>
-                        <li class='star' title='2' data-value='2'>
-                            <i class='fa fa-star'></i>
-                        </li>
-                        <li class='star' title='3' data-value='3'>
-                            <i class='fa fa-star'></i>
-                        </li>
-                        <li class='star' title='4' data-value='4'>
-                            <i class='fa fa-star'></i>
-                        </li>
-                        <li class='star' title='5' data-value='5'>
-                            <i class='fa fa-star'></i>
-                        </li>
-                    </ul>
-                </div>
-                <div class="product__share"> Share it!</div>
-                <div class="socials">
-                    <ul class="socials__list">
-                        <li><a href="http://facebook.com"><i class=" fa fa-facebook socials__list__icon"></i></a>
-                        </li>
-                        <li><a href="http://twitter.com"><i class=" fa fa-twitter socials__list__icon"></i></a>
-                        </li>
-                        <li><a href="http://pinterest.com"><i class=" fa fa-pinterest-p socials__list__icon"></i></a>
-                        </li>
-                        <li><a href="http://youtube.com"><i class=" fa fa-youtube socials__list__icon"
-                                    aria-hidden="true"></i></a> </li>
-                        <li class="close-modal"></li>
-                    </ul>
-                </div>
-                <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </div>
-
-                <div class="product-size">
-                    <span>SIZE:</span>
-                    <ul>
-                        <li class="product-size__variant">XS</li>
-                        <li class="product-size__variant">S</li>
-                        <li class="product-size__variant">M</li>
-                    </ul>
-                </div>
-                <div class="product-color">
-                    <span>COLOR:</span>
-                    <ul>
-                        <li class="product-color__variant"></li>
-                        <li class="product-color__variant"></li>
-                        <li class="product-color__variant"></li>
-                        <li class="product-color__variant"></li>
-                    </ul>
-                </div>
-            </div>
-            <button class="product-add-to-cart">ADD TO CART</button>
-        </div>
-    </div>
-    <section class="similar-products">
-        <h3 class="similar-products__header">YOU MAY ALSO LIKE</h3>
-        <div class="similar-products-wrapper">
-            <div class="similar-product">
-                <img src="images/01.png" alt="product_image" class="similar-product__img">
-                <p class="similar-product__price">
-                    <span class="product__price__old">$29.99 </span>
-                    <span class="product__price__new"> $19.99</span>
-                </p>
-
-                <h4 class="similar-product__name">FOR GAMERS BY GAMERS TEE</h4>
-            </div>
-            <div class="similar-product">
-                <img src="images/02.png" alt="product_image" class="similar-product__img">
-                <p class="similar-product__price">$22.00</p>
-                <h4 class="similar-product__name">PRO GAMER SLASH HOODIE</h4>
-            </div>
-            <div class="similar-product">
-                <img src="images/03.png" alt="product_image" class="similar-product__img">
-                <p class="similar-product__price">$24.99</p>
-                <h4 class="similar-product__name">SPECTROOM GAMER TEE</h4>
-            </div>
-            <div class="similar-product">
-                <img src="images/04.png" alt="product_image" class="similar-product__img">
-                <p class="similar-product__price"><span class="product__price__old">$29.99</span><span class="product__price__new">$19.99</span></p>
-                <h4 class="similar-product__name">GAMING FOR GOOD TEE</h4>
-            </div>
-            <div class="similar-product">
-                <img src="images/05.png" alt="product_image" class="similar-product__img">
-                <p class="similar-product__price">$60.00</p>
-                <h4 class="similar-product__name">SPECTROOM WEB HOODIE</h4>
-            </div>
-            <div class="similar-product">
-                <img src="images/06.png" alt="product_image" class="similar-product__img">
-                <p class="similar-product__price">$54.00</p>
-                <h4 class="similar-product__name">SPECTRUM VARSITY HOODIE</h4>
+                <button class="product-add-to-cart">ADD TO CART</button>
             </div>
         </div>
-        <div class="slider-btns">
-            <div class="slider-btns__prev"></div>
-            <div class="slider-btns__next"></div>
-        </div>
-    </section>
-    <script src="script.js"></script>
-</body>
+        <section class="similar-products">
+            <h3 class="similar-products__header">YOU MAY ALSO LIKE</h3>
+            <div class="similar-products-wrapper">
+                <div class="similar-product">
+                    <img src="images/01.png" alt="product_image"
+                        class="similar-product__img">
+                    <p class="similar-product__price">
+                        <span class="product__price__old">$29.99 </span>
+                        <span class="product__price__new"> $19.99</span>
+                    </p>
+
+                    <h4 class="similar-product__name">FOR GAMERS BY GAMERS TEE</h4>
+                </div>
+                <div class="similar-product">
+                    <img src="images/02.png" alt="product_image"
+                        class="similar-product__img">
+                    <p class="similar-product__price">$22.00</p>
+                    <h4 class="similar-product__name">PRO GAMER SLASH HOODIE</h4>
+                </div>
+                <div class="similar-product">
+                    <img src="images/03.png" alt="product_image"
+                        class="similar-product__img">
+                    <p class="similar-product__price">$24.99</p>
+                    <h4 class="similar-product__name">SPECTROOM GAMER TEE</h4>
+                </div>
+                <div class="similar-product">
+                    <img src="images/04.png" alt="product_image"
+                        class="similar-product__img">
+                    <p class="similar-product__price"><span
+                            class="product__price__old">$29.99</span><span
+                            class="product__price__new">$19.99</span></p>
+                    <h4 class="similar-product__name">GAMING FOR GOOD TEE</h4>
+                </div>
+                <div class="similar-product">
+                    <img src="images/05.png" alt="product_image"
+                        class="similar-product__img">
+                    <p class="similar-product__price">$60.00</p>
+                    <h4 class="similar-product__name">SPECTROOM WEB HOODIE</h4>
+                </div>
+                <div class="similar-product">
+                    <img src="images/06.png" alt="product_image"
+                        class="similar-product__img">
+                    <p class="similar-product__price">$54.00</p>
+                    <h4 class="similar-product__name">SPECTRUM VARSITY HOODIE</h4>
+                </div>
+            </div>
+            <div class="slider-btns">
+                <div class="slider-btns__prev"></div>
+                <div class="slider-btns__next"></div>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
+    </body>
 
 </html>
